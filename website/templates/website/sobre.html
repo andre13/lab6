@@ -1,0 +1,9 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <h3>Sobre</h3>
+    <p>Coisas sobre nós:</p>
+    {% for item in listaItens %}
+        <ul><li>{{ item }}</li></ul>
+    {% endfor %}
+{% endblock %}
